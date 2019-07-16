@@ -14,7 +14,7 @@ The [Hugo](https://gohugo.io/) boilerplate we use for our projects.
 
 Atlas provides the following features out of the box:
 
-* Pre configured support for Hugo Pipes, with SASS and Autoprefixer
+* Pre configured support for Hugo Pipes, with SASS, PurgeCSS and Autoprefixer
 * Environment driven `robots.txt` file (disallows robots on everything other than production)
 * Base HTML templates with easy customisation/extension
 * [Configuration](/netlify.toml) for Netlify deployments
@@ -38,6 +38,7 @@ npm run server
 
 There are 3 commands available:
 
+& `npm start` - Alias of `npm run server`
 * `npm run build` - Builds assets (sass, js, fonts, images) and runs `hugo`
 * `npm run build:preview` - The same as `build`, but runs `hugo --buildDrafts --buildFuture`
 * `npm run server` - Runs BrowserSync and watches for changes, running `build` when changes are detected
